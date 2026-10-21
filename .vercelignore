@@ -1,0 +1,14 @@
+# Demo static: adminul cere server.py și disc scriibil, nu rulează pe Vercel.
+server.py
+admin.html
+admin.css
+admin.js
+data/
+uploads/
+__pycache__/
+references/
+*.md
+.DS_Store
+assets/*-concept.jpg
+assets/found/credits.json
+.env.local

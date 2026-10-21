@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e7e3dc">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Boaba Coffee Constanța — Cafea de specialitate · demo</title>
+  <meta name="description" content="Demo: Boaba Coffee (fictivă), Constanța. Espresso, latte, pour-over și cold brew pe Strada Exemplului nr. 12. Luni–sâmbătă, 07:00–17:00.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:title" content="Boaba Coffee — Cafea, lin.">
+  <meta property="og:description" content="Proiect demonstrativ: o cafenea de specialitate fictivă din Constanța.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231c1512'/%3E%3Cellipse cx='32' cy='32' rx='13' ry='19' fill='%23c4913a' transform='rotate(25 32 32)'/%3E%3Cpath d='M29 15c7 9-5 25 5 34' stroke='%231c1512' stroke-width='3.5' fill='none' transform='rotate(25 32 32)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Boaba Coffee Constanța — demo","inLanguage":"ro-RO","description":"Proiect demonstrativ, cafenea fictivă. Imagini ilustrative cu licență liberă.","about":{"@type":"CafeOrCoffeeShop","name":"Boaba Coffee","address":{"@type":"PostalAddress","streetAddress":"Strada Exemplului nr. 12","addressLocality":"Constanța","postalCode":"900592","addressCountry":"RO"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Constan%C8%9Ba"}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#continut">Sari la conținut</a>
+  <p class="demo-bar">Proiect demonstrativ: cafeneaua este fictivă. <a href="#despre-demo">Despre concept</a></p>
+  <p class="announcement" id="announcement" hidden></p>
+
+  <header class="site-header">
+    <nav class="nav-links" aria-label="Navigare principală">
+      <a href="#meniu">Meniu</a><a href="#oferte" id="nav-offers" hidden>Oferte</a><a href="#galerie">Galerie</a><a href="#vizita">Program</a>
+    </nav>
+    <a class="wordmark" href="#" aria-label="Boaba Coffee, începutul paginii">Boaba Coffee</a>
+    <a class="button button-small" href="https://www.google.com/maps/search/?api=1&query=Constan%C8%9Ba" target="_blank" rel="noopener noreferrer">Cum ajungi</a>
+  </header>
+
+  <main id="continut">
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero-film">
+        <video id="hero-film" autoplay muted loop playsinline preload="metadata" poster="assets/found/pour-over-film-poster.jpg" width="854" height="480" aria-hidden="true"><source src="assets/found/pour-over-film.webm" type="video/webm"></video>
+        <figcaption>Pour-over, pas cu pas · film de Lev Lazinskiy, CC BY-SA 4.0</figcaption>
+      </figure>
+      <h1 class="hero-title lines" id="hero-title">
+        <span class="line"><span data-line style="--i:0">Cafea,</span></span>
+        <span class="line line-step"><span data-line style="--i:1">lin.</span></span>
+      </h1>
+      <figure class="hero-photo">
+        <img id="hero-img" src="assets/found/latte-art-3.jpg" alt="Lapte turnat într-o ceașcă albă, desenând o frunză pe cafea." width="1920" height="1277" fetchpriority="high">
+      </figure>
+      <div class="hero-copy">
+        <p class="hero-lead">Espresso, latte, pour-over și cold brew pe Strada Exemplului nr. 12, în Constanța. Luni–sâmbătă, <span data-field="hoursWeek">07:00–17:00</span>.</p>
+        <p class="open-status" id="open-status" hidden></p>
+        <a class="button" href="#meniu">Vezi meniul</a>
+      </div>
+    </section>
+
+    <section class="intro" aria-label="Despre cafenea">
+      <p class="statement">O cafenea mică pe strada Exemplului. Espresso la bar, pour-over când ai timp, cold brew când e cald.</p>
+      <p class="intro-body">Boaba Coffee face cafea de specialitate în Constanța: espresso băut în picioare, latte pentru o pauză mai lungă, pour-over urmărit cum curge, picătură cu picătură. Lângă cafea, patiserie din vitrină. Numele sună a ce promite: cafea, lin.</p>
+      <figure class="intro-plate">
+        <img src="assets/found/coffea-arabica-blanco.jpg" alt="Planșă botanică veche: ramură de cafea cu frunze lucioase, flori albe și boabe roșii." width="1417" height="1983" loading="lazy">
+      </figure>
+      <p class="intro-note">Coffea arabica, planta din care vine cafeaua. Planșă din Flora de Filipinas a lui Francisco Manuel Blanco, 1880–1883. Domeniu public.</p>
+    </section>
+
+    <section class="menu" id="meniu" aria-labelledby="menu-title">
+      <h2 class="menu-title" id="menu-title">Cât timp ai pentru cafea?</h2>
+      <div class="menu-picker" id="menu-picker" hidden>
+        <p class="picker-question">Alege și îți arătăm ce încape în pauza ta.</p>
+        <div class="picker-options" role="group" aria-label="Timpul pe care îl ai">
+          <button type="button" class="chip" data-minutes="5" aria-pressed="false">5 minute</button>
+          <button type="button" class="chip" data-minutes="15" aria-pressed="false">Un sfert de oră</button>
+          <button type="button" class="chip" data-minutes="60" aria-pressed="false">O oră</button>
+        </div>
+        <p class="picker-answer" id="picker-answer" aria-live="polite">Fiecare cafea are timpul ei. Cel mai scurt e espresso-ul.</p>
+      </div>
+      <figure class="menu-photo">
+        <img src="assets/found/barista-coffee.jpg" alt="Mâinile unui barista la un espressor cu port-filtru, în lumină slabă." width="960" height="640" loading="lazy">
+        <figcaption>La espressor · Malidate Van, CC0</figcaption>
+      </figure>
+      <div class="menu-board" id="menu-board">
+        <div class="menu-group">
+          <h3>Cafea</h3>
+          <ul>
+            <li class="menu-row" data-id="p-espresso"><div class="menu-line"><span class="menu-name">Espresso</span><span class="menu-value">cam 30 de secunde</span></div><p>Scurt și intens, extras sub presiune.</p></li>
+            <li class="menu-row" data-id="p-latte"><div class="menu-line"><span class="menu-name">Latte</span><span class="menu-value">cam 2 minute</span></div><p>Espresso și lapte cald, cu textură fină.</p></li>
+            <li class="menu-row" data-id="p-pour-over"><div class="menu-line"><span class="menu-name">Pour-over</span><span class="menu-value">4–5 minute</span></div><p>Cafea filtrată manual, turnată lent, în cerc.</p></li>
+            <li class="menu-row" data-id="p-cold-brew"><div class="menu-line"><span class="menu-name">Cold brew</span><span class="menu-value">gata, la rece</span></div><p>Extrasă ore întregi în apă rece, servită imediat.</p></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h3>Patiserie</h3>
+          <ul>
+            <li class="menu-row" data-id="p-patiserie"><div class="menu-line"><span class="menu-name">Selecția zilei</span><span class="menu-value">din vitrină</span></div><p>Întreabă echipa ce e în vitrină și despre alergeni.</p></li>
+          </ul>
+        </div>
+        <p class="menu-footnote" id="menu-footnote">Timpii sunt orientativi pentru fiecare metodă. Prețurile și disponibilitatea se confirmă la bar.</p>
+      </div>
+    </section>
+
+    <section class="offers" id="oferte" aria-labelledby="offers-title" hidden>
+      <h2 id="offers-title">Acum, la bar.</h2>
+      <div class="offers-list" id="offers-grid"></div>
+    </section>
+
+    <section class="gallery" id="galerie" aria-labelledby="gallery-title">
+      <h2 class="gallery-title" id="gallery-title">Cafeaua, de aproape.</h2>
+      <div class="gallery-grid" id="gallery-grid">
+        <figure><a class="gallery-button" href="assets/found/coffeehouse-bar.jpg"><img src="assets/found/coffeehouse-bar.jpg" alt="Barista lângă un espressor auriu, sub un turn de pahare de hârtie." width="960" height="1281" loading="lazy"></a><figcaption>Dimineața, la bar · Mike Wilson, CC0</figcaption></figure>
+        <figure><a class="gallery-button" href="assets/found/cafe-glasses.jpg"><img src="assets/found/cafe-glasses.jpg" alt="Tejghea de lemn cu un vas de filtru din sticlă, cântar și pahar cu apă." width="960" height="668" loading="lazy"></a><figcaption>Cântar, filtru, apă · Habib Parvin, CC0</figcaption></figure>
+        <figure><a class="gallery-button" href="assets/found/manual-drip-pour-over-coffee.jpg"><img src="assets/found/manual-drip-pour-over-coffee.jpg" alt="Apă turnată dintr-un ibric cu cioc lung peste un filtru de cafea, văzută de sus." width="1920" height="1278" loading="lazy"></a><figcaption>Pour-over, de sus · Kim Sanso, CC0</figcaption></figure>
+        <figure><a class="gallery-button" href="assets/found/a-glass-of-cold-brew-coffee-with.jpg"><img src="assets/found/a-glass-of-cold-brew-coffee-with.jpg" alt="Pahar de cold brew cu gheață pe o farfurioară, lângă o fereastră." width="1536" height="2048" loading="lazy"></a><figcaption>Cold brew, la fereastră · Rita Robles Loaiza, CC0</figcaption></figure>
+      </div>
+      <p class="gallery-note" id="gallery-disclaimer">Imagini ilustrative cu licență liberă, nu fotografii din local. Fotografiile Boaba Coffee se adaugă din panoul de administrare.</p>
+    </section>
+
+    <section class="visit" id="vizita" aria-labelledby="visit-title">
+      <div class="visit-head">
+        <h2 class="visit-title" id="visit-title">Ne vedem pe strada Exemplului.</h2>
+        <p class="visit-statement">La numărul 147, de luni până sâmbătă, de la 7 la 17. Duminica, închis.</p>
+      </div>
+      <figure class="visit-card">
+        <img src="assets/found/constanta-stradacarol-1910.jpg" alt="Carte poștală colorată din 1910: Strada Carol din Constanța, cu clădiri cu balcoane și trăsuri." width="1372" height="868" loading="lazy">
+        <figcaption>Constanța, Strada Carol, 1910. Carte poștală, domeniu public.</figcaption>
+      </figure>
+      <div class="visit-links">
+        <p class="visit-question">Vii pe jos sau cu mașina?</p>
+        <a class="big-link" href="https://www.google.com/maps/search/?api=1&query=Constan%C8%9Ba" target="_blank" rel="noopener noreferrer">Rută în Google Maps</a>
+        <a class="big-link" id="phone-link" href="tel:+40700001101">Sună: <span data-field="phone">+40 700 001 101</span></a>
+        
+      </div>
+      <div class="visit-facts">
+        <address>Strada Exemplului nr. 12<br>900592 Constanța</address>
+        <dl class="hours">
+          <div><dt>Luni–sâmbătă</dt><dd data-field="hoursWeek">07:00–17:00</dd></div>
+          <div><dt>Duminică</dt><dd data-field="hoursSunday">Închis</dd></div>
+        </dl>
+        <p class="visit-small">Program conform World Coffee Map. Confirmă programul de sărbători.</p>
+      </div>
+      <div class="map-panel">
+        <div class="map-placeholder" id="map-placeholder">
+          <img src="assets/found/constanta-generala-1909.jpg" alt="Carte poștală din 1909: Constanța văzută de sus, acoperișuri roșii și marea în fundal." width="1297" height="844" loading="lazy">
+          <div class="map-copy">
+            <p>Constanța de sus, într-o carte poștală din 1909.</p>
+            <button id="load-map" class="button" type="button" hidden>Încarcă harta Google</button>
+            <p class="map-privacy">Harta interactivă se încarcă doar la cerere și conectează browserul la Google.</p>
+          </div>
+        </div>
+        <div id="map-frame" hidden></div>
+      </div>
+    </section>
+
+    <section class="about-demo" id="despre-demo" aria-labelledby="demo-title">
+      <h2 id="demo-title">Un concept, spus deschis.</h2>
+      <div class="about-text">
+        <p>Acesta este un <strong>proiect demonstrativ</strong>. Cafeneaua, adresa, programul și telefonul sunt fictive. Paleta, fontul și textele sunt o propunere de design.</p>
+      </div>
+      <div class="credits">
+        <h3>Imagini și film</h3>
+        <p>Toate imaginile sunt ilustrative și nu arată localul sau produsele Boaba Coffee. <a href="https://commons.wikimedia.org/w/index.php?curid=70214602">„Latte art 3”</a> și <a href="https://commons.wikimedia.org/w/index.php?curid=70214599">„Manual drip (pour-over) coffee”</a> de Kim Sanso, CC0, Wikimedia Commons; <a href="https://stocksnap.io/photo/barista-coffee-ZCW5B7GXFY">„Barista Coffee”</a> de Malidate Van, CC0, StockSnap; <a href="https://stocksnap.io/photo/coffeehouse-bar-G4CI0OOK75">„Coffeehouse Bar”</a> de Mike Wilson, CC0, StockSnap; <a href="https://stocksnap.io/photo/cafe-glasses-LWB0UANI5Y">„Cafe Glasses”</a> de Habib Parvin, CC0, StockSnap; <a href="https://wordpress.org/photos/photo/64169ecf35/">„A glass of cold brew coffee…”</a> de Rita Robles Loaiza, CC0, WordPress Photo Directory; <a href="https://commons.wikimedia.org/wiki/File:Coffea_arabica_Blanco1.53.png">„Coffea arabica”</a> de Francisco Manuel Blanco, domeniu public; cărțile poștale <a href="https://commons.wikimedia.org/wiki/File:Constan%C5%A3a_Stradacarol_1910.jpg">„Constanța, Strada Carol, 1910”</a>, <a href="https://commons.wikimedia.org/wiki/File:Constan%C5%A3a_Generala_1909.jpg">„Constanța, vedere generală, 1909”</a> și <a href="https://commons.wikimedia.org/wiki/File:Constan%C5%A3a_Portul_generala_1910.jpg">„Constanța, portul, 1910”</a>, domeniu public, Wikimedia Commons; filmul <a href="https://commons.wikimedia.org/wiki/File:Pour_Over.ogv">„Pour Over”</a> de Lev Lazinskiy, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, Wikimedia Commons.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="footer-photo" src="assets/found/constanta-portul-generala-1910.jpg" alt="" width="1348" height="895" loading="lazy">
+    <div class="footer-top">
+      <nav class="footer-links" aria-label="Linkuri de final"><a href="#meniu">Meniu</a><a href="#galerie">Galerie</a><a href="#vizita">Program și hartă</a><a href="#despre-demo">Despre demo</a></nav>
+      <p class="footer-contact">Strada Exemplului nr. 12, Constanța<br>Luni–sâmbătă, <span data-field="hoursWeek">07:00–17:00</span></p>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-wordmark" href="#" aria-label="Boaba Coffee, înapoi sus">Boaba Coffee</a>
+      <p class="footer-legal">Proiect demonstrativ, 2026. În fundal: portul Constanța, carte poștală din 1910, domeniu public.</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Imagine mărită"><button class="close-dialog" type="button">Închide</button><img src="assets/found/latte-art-3.jpg" alt=""><p></p></dialog>
+</body>
+</html>

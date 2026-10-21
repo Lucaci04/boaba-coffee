@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Boaba Coffee — Administrare</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2328211d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <main class="login" id="login" hidden>
+    <form class="login-card" id="login-form">
+      <p class="brand">Boaba Coffee<span>.</span></p>
+      <h1>Administrare</h1>
+      <label for="password">Parolă</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button class="btn btn-dark" type="submit">Intră</button>
+      <p class="form-error" id="login-error" role="alert"></p>
+    </form>
+  </main>
+
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <p class="brand">Boaba Coffee<span>.</span> <small>Administrare</small></p>
+      <nav class="tabs" role="tablist" aria-label="Secțiuni">
+        <button role="tab" type="button" data-tab="products" aria-selected="true">Produse</button>
+        <button role="tab" type="button" data-tab="offers" aria-selected="false">Oferte</button>
+        <button role="tab" type="button" data-tab="gallery" aria-selected="false">Galerie</button>
+        <button role="tab" type="button" data-tab="settings" aria-selected="false">Informații</button>
+      </nav>
+      <div class="topbar-actions"><a href="/" target="_blank" rel="noopener">Vezi site ↗</a><button type="button" class="link" id="logout">Ieși</button></div>
+    </header>
+
+    <main class="panel">
+      <section data-panel="products">
+        <div class="panel-head"><div><h2>Produse</h2><p>Grupate pe categorii, în ordinea de aici. Lasă prețul gol dacă nu vrei să-l afișezi.</p></div><button class="btn btn-dark" type="button" data-add="products">+ Adaugă produs</button></div>
+        <div class="rows" id="products"></div>
+      </section>
+      <section data-panel="offers" hidden>
+        <div class="panel-head"><div><h2>Oferte</h2><p>Ofertele active și în termen apar pe site într-o secțiune proprie.</p></div><button class="btn btn-dark" type="button" data-add="offers">+ Adaugă ofertă</button></div>
+        <div class="rows" id="offers"></div>
+      </section>
+      <section data-panel="gallery" hidden>
+        <div class="panel-head"><div><h2>Galerie</h2><p>JPG, PNG sau WebP, max. 6 MB. Prima fotografie din local (nemarcată „ilustrativă”) devine și imaginea principală.</p></div><label class="btn btn-dark upload">+ Încarcă fotografii<input type="file" id="upload" accept="image/jpeg,image/png,image/webp" multiple></label></div>
+        <div class="gallery" id="gallery"></div>
+      </section>
+      <section data-panel="settings" hidden>
+        <div class="panel-head"><div><h2>Informații</h2><p>Anunțul apare într-o bandă discretă deasupra site-ului. Lasă-l gol ca să-l ascunzi.</p></div></div>
+        <div class="card settings" id="settings">
+          <label class="wide">Anunț<input data-setting="announcement" maxlength="160" placeholder="ex: Sâmbătă deschidem la 09:00"></label>
+          <label>Telefon<input data-setting="phone" maxlength="30"></label>
+          <label>Program luni–sâmbătă<input data-setting="hoursWeek" maxlength="30" placeholder="07:00–17:00"></label>
+          <label>Program duminică<input data-setting="hoursSunday" maxlength="30" placeholder="Închis"></label>
+        </div>
+      </section>
+    </main>
+
+    <div class="savebar" id="savebar" data-state="clean">
+      <p id="save-status" role="status">Totul este salvat.</p>
+      <button class="btn btn-ghost" type="button" id="revert">Renunță</button>
+      <button class="btn btn-dark" type="button" id="save">Salvează <kbd>⌘S</kbd></button>
+    </div>
+  </div>
+
+  <datalist id="categories"></datalist>
+</body>
+</html>

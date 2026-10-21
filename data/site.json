@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "announcement": "",
+    "phone": "+40 700 001 101",
+    "hoursWeek": "07:00–17:00",
+    "hoursSunday": "Închis"
+  },
+  "products": [
+    {
+      "id": "p-espresso",
+      "category": "Cafea",
+      "name": "Espresso",
+      "description": "Scurt și intens, extras sub presiune.",
+      "price": null,
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p-latte",
+      "category": "Cafea",
+      "name": "Latte",
+      "description": "Espresso și lapte cald, cu textură fină.",
+      "price": null,
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p-pour-over",
+      "category": "Cafea",
+      "name": "Pour-over",
+      "description": "Cafea filtrată manual, turnată lent, în cerc.",
+      "price": null,
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p-cold-brew",
+      "category": "Cafea",
+      "name": "Cold brew",
+      "description": "Extrasă ore întregi în apă rece, servită imediat.",
+      "price": null,
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p-patiserie",
+      "category": "Patiserie",
+      "name": "Selecția zilei",
+      "description": "Întreabă echipa ce e în vitrină și despre alergeni.",
+      "price": null,
+      "available": true,
+      "featured": false
+    }
+  ],
+  "offers": [],
+  "gallery": [
+    {
+      "id": "g-bar",
+      "src": "assets/found/coffeehouse-bar.jpg",
+      "alt": "Barista lângă un espressor auriu, sub un turn de pahare de hârtie.",
+      "caption": "Dimineața, la bar · Mike Wilson, CC0",
+      "concept": true
+    },
+    {
+      "id": "g-glasses",
+      "src": "assets/found/cafe-glasses.jpg",
+      "alt": "Tejghea de lemn cu un vas de filtru din sticlă, cântar și pahar cu apă.",
+      "caption": "Cântar, filtru, apă · Habib Parvin, CC0",
+      "concept": true
+    },
+    {
+      "id": "g-pour",
+      "src": "assets/found/manual-drip-pour-over-coffee.jpg",
+      "alt": "Apă turnată dintr-un ibric cu cioc lung peste un filtru de cafea, văzută de sus.",
+      "caption": "Pour-over, de sus · Kim Sanso, CC0",
+      "concept": true
+    },
+    {
+      "id": "g-cold",
+      "src": "assets/found/a-glass-of-cold-brew-coffee-with.jpg",
+      "alt": "Pahar de cold brew cu gheață pe o farfurioară, lângă o fereastră.",
+      "caption": "Cold brew, la fereastră · Rita Robles Loaiza, CC0",
+      "concept": true
+    },
+    {
+      "id": "g-latte",
+      "src": "assets/found/latte-art-3.jpg",
+      "alt": "Lapte turnat într-o ceașcă albă, desenând o frunză pe cafea.",
+      "caption": "Latte, în ceașcă albă · Kim Sanso, CC0",
+      "concept": true
+    }
+  ],
+  "updatedAt": "2026-10-14T23:55:33Z"
+}
